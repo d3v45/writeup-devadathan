@@ -1,3 +1,4 @@
+# OverTheWire
 # Bandit
 ## Level 0
 ```
@@ -79,6 +80,11 @@ cat ./-file07
 Pass: lrIWWI6bB37kxfiCQZqUdOIYfr6eEeqR
 
 ## Bandit Level 5 → Level 6
+In question hints, they given human readable and its size
+
+To find size we use "du" command
+and to get size in bytes we use "-b"
+to get size of all we use "-a"
 
 ```
 du -a -b
@@ -88,6 +94,9 @@ cat .file2
  **What did i learnt:-**
  
  du - estimate file space usage
+ 
+  -b, --bytes
+              equivalent to '--apparent-size --block-size=1'
  
 
 Pass: P4L4vucdmLnm8I7Vl7jG1ApGSfjYKqJU
