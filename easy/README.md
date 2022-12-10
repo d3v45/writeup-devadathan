@@ -62,6 +62,7 @@ It was a power socket
 by analyzing and researching, i found it is in Italy.
 
 ##  ~logic -[HARDWARE]
+
 Downloaded the attachment of logic gate circuit
 
 The output should be 1 
