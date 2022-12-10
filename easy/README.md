@@ -12,6 +12,7 @@ Found an online  decoder and gave the key according to given in the hint
 decoded the flag!!
 
 **What i learnt :-**
+
 Understood what is french cipher 
 
 The Vigenère cipher is a method of encrypting alphabetic text by using a series of interwoven Caesar ciphers, based on the letters of a keyword. It employs a form of polyalphabetic substitution.
@@ -49,9 +50,11 @@ Connected the arduino to the laptop.
 In Arduino IDE opened serial monitor and got the output flag!!
 
 **What i learnt from it :-** 
+
 Understood how to use Arduino IDE
 
 ##  find_thyself -[OSINT]
+
 Downloaded the attachment
 
 It was a power socket
@@ -60,6 +63,7 @@ by analyzing and researching, i found it is in Italy.
 
 ##  ~logic -[HARDWARE]
 Downloaded the attachment of logic gate circuit
+
 The output should be 1 
 
 by analyzing found what are the inputs we wanted to give
@@ -68,6 +72,7 @@ By entering to the link given in description, entered to a simulation and gave n
 after gave the same input values in the simulation and found the output flag!!
 
 **What i learnt from it :-**
+
 Improvede my logic gate input and output thinking level
 
 ## # chan's favorite
@@ -79,6 +84,7 @@ Changed the track view into spectogram
 got the flag look like an image on the track view.
 
 **What i learnt from it :-** 
+
 Interacted more with Audacity.
 
 ##  D0Z3N_IS_K3Y -[REVERSING]
