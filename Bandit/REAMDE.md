@@ -87,9 +87,11 @@ and to get size in bytes we use "-b"
 to get size of all we use "-a"
 
 ```
-du -a -b
-ls -a
-cat .file2
+ls
+cd inhere
+ls
+ls -al * | grep -B 10 1033
+cat maybehere07/.file2
 ```
  **What did i learnt:-**
  
@@ -103,4 +105,12 @@ Pass: P4L4vucdmLnm8I7Vl7jG1ApGSfjYKqJU
 
 ## Bandit Level 5 → Level 6
 
+```
+find / -user bandit7 -group bandit6 -size 33c
+'''
+
+'''
+
+cat /var/lib/dpkg/info/bandit7.password
+```
 
