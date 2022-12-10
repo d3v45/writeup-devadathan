@@ -69,3 +69,29 @@ Pass: 2EW7BBsr6aMMoJ2HjW067dm8EgX26xNe
 
 ## Bandit Level 4 → Level 5
 
+Tried to read files one bye one with using cat and ./ used because filename starting with "-"
+```
+cd inhere
+ls
+cat ./-file07
+```
+
+Pass: lrIWWI6bB37kxfiCQZqUdOIYfr6eEeqR
+
+## Bandit Level 5 → Level 6
+
+```
+du -a -b
+ls -a
+cat .file2
+```
+ **What did i learnt:-**
+ 
+ du - estimate file space usage
+ 
+
+Pass: P4L4vucdmLnm8I7Vl7jG1ApGSfjYKqJU
+
+## Bandit Level 5 → Level 6
+
+
