@@ -452,10 +452,31 @@ Pass: fGrHPx402xGC7U7rXKDaxiWFTOiF0ENq
 Used **nc** command to connect with port 30000 on localhost.
 
 The Netcat ( nc ) command is a command-line utility for reading and writing data between two computer networks.
+```
+nc localhost 30000
+```
 
 And gave the password of level 14
+```
+fGrHPx402xGC7U7rXKDaxiWFTOiF0ENq
+```
+Output:
 
+Correct!
+jN2kgmIXJ6fShzhT2avhotn4Zcka6tnt
+ 
+Pass: jN2kgmIXJ6fShzhT2avhotn4Zcka6tnt 
 
+## Bandit Level 15 → Level 16
+```
+openssl s_client -connect localhost:30001
+```
+
+In this level i studied **openssl** command and **s_client** 
+
+OpenSSL is a cryptography software library or toolkit that makes communication over computer networks more secure. 
+ 
+The s_client command implements a generic SSL/TLS client which connects to a remote host using SSL/TLS . It is a very useful diagnostic tool for SSL servers.
 
 
 
