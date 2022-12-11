@@ -476,6 +476,8 @@ Gave previous password
 ```
 jN2kgmIXJ6fShzhT2avhotn4Zcka6tnt
 ```
+Pass: JQttfApK4SeyHwDlI9SXGR50qclOAil1
+
 In this level i studied when to use and where to use **openssl** command and **s_client** command 
 
 OpenSSL is a cryptography software library or toolkit that makes communication over computer networks more secure. 
@@ -532,8 +534,43 @@ Using vim editor we will copy and paste the RSA private key into a file named, s
 ```
 vim sshkey.private
 ```
+ Paste the key in vim editor 
+ Enter **:wq** to save and exit from vim editor
 
-
+If we want to check by reading the key 
+```
+cat sshkey.private
+```
+ 
+ change the sshkey.private file’s permission using chmod command to only allow the owner (thats you) the ability to read and write access. This is done by executing chmod 400 sshkey.private command.
+```
+chmod 400 sshkey.private
+```
+ After this, next step is connecting to the port
+```
+sh -i sshkey.private bandit17@localhost -p2220
+```
+ Now we are in bandit17
+ To get the password, 
+```
+cat /etc/bandit_pass/bandit17
+```
+ 
+ Pass: VwOSWtCA7lRKkTfbr2IDh6awj9RNZM5e
+ 
+ ## Bandit Level 17 → Level 18
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
 
 
 
