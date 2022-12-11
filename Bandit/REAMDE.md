@@ -471,12 +471,17 @@ Pass: jN2kgmIXJ6fShzhT2avhotn4Zcka6tnt
 ```
 openssl s_client -connect localhost:30001
 ```
-
-In this level i studied **openssl** command and **s_client** 
+After entering to the port ,
+Gave previous password
+```
+jN2kgmIXJ6fShzhT2avhotn4Zcka6tnt
+```
+In this level i studied when to use and where to use **openssl** command and **s_client** command 
 
 OpenSSL is a cryptography software library or toolkit that makes communication over computer networks more secure. 
  
 The s_client command implements a generic SSL/TLS client which connects to a remote host using SSL/TLS . It is a very useful diagnostic tool for SSL servers.
+
 
 
 
