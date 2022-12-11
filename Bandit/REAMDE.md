@@ -144,6 +144,124 @@ Pass: z7WtoNQU2XfjmMtWA8u5rN4vzqu4v99S
  
 ## Bandit Level 8 → Level 9
 
+In question given that only line of text that occurs only once
+
+So we need to sort and need to see the line occurs only one
+
+we use  "sort" command  for sorting and we use "unique"  command to find line occurs only once 
+
+with help of pipe to to make all in one line command
+```
+cat data.txt | sort | uniq -u
+```
+ **What did i learnt:-**
+ Studied how and when to use "unique" command and "sort" command
+Pass: EN632PlfYiZbn3PhVK3XOGSlNInNE00t
+## Bandit Level 9 → Level 10
+In this we want to read the file using cat command and it is few human-readable strings
+
+So we want to find strings
+
+Using both in one line with pipe
+```
+cat data.txt | strings
+```
+ **What did i learnt:-**
+ 
+ "Strings" command is used to find strings
+ 
+ Pass: G7w8LIi6J3kTb8A7j9LgrywtEUlyyp6s
+ ## Bandit Level 10 → Level 11
+Next passwerd contains base64 encoded data
+
+We need to find which are base64 encoded data and we need to decode that
+```
+cat data.txt | base64 -d
+```
+Then the output will be
+
+The password is 6zPeziLdR2RKNdNYFNb6nVCKzphlXHBM
+ **What did i learnt:-**
+ Learned to use "base64" command and 
+ 
+ "-d" with that command is to decode.
+ 
+ Pass: 6zPeziLdR2RKNdNYFNb6nVCKzphlXHBM
+ ## Bandit Level 11 → Level 12
+ password for the next level is stored in the file data.txt, where all lowercase (a-z) and uppercase (A-Z) letters have been rotated by 13 positions
+ 
+ First read the file data.txt using cat command 
+ ```
+ cat data.txt
+ ```
+ got a ciphertext 
+ 
+ "Gur cnffjbeq vf WIAOOSFzMjXXBC0KoSKBbJ8puQm5lIEi"
+ 
+ Decoded it online with "ROT13 decoder"
+ 
+ and got the password like given below
+ 
+ The password is JVNBBFSmZwKKOP0XbFXOoW8chDz5yVRv
+ 
+ Pass: JVNBBFSmZwKKOP0XbFXOoW8chDz5yVRv
+ 
+ ## Bandit Level 12 → Level 13
+ Next passwrd is stored file data.txt, which is a hexdump of a file that has been repeatedly compressed.
+ 
+ tried 
+ 
+```
+ls
+cat data.txt
+```
+
+didn't got password so we want to create a directory under /tmp
+```
+mkdir /tmp/newfile666
+```
+copy files in data.txt to the new directory named "newfile666"
+```
+cp data.txt /tmp/newfile666
+```
+Enter the directory using cd command
+```
+cd /tmp/newfile666
+```
+xxd - make a hexdump or do the reverse.
+```
+xxd -r data.txt data
+```
+file command is used to identify the type of file
+
+we want to identify the type of file "data"
+
+```
+file data
+```
+Got outpu as 
+
+data: gzip compressed data, was "data2.bin", last modified: Sat Dec  3 08:13:49 2022, max compression, from Unix, original size modulo 2^32 170795040
+
+Understood that is a gzip compressed data 
+
+we want to decompress it 
+
+We need to rename it to **.gz** format to decompress it
+
+**mv** command is used to Move or rename files
+```
+mv data data.gz
+```
+After changing **data** to **data.gz** 
+
+Next step is to decompress
+
+**gzip -d [file]** command used to decompress
+```
+gzip -d data.gz
+```
+Check using **file** command we got it or do we need to decompress more
 
 
 
