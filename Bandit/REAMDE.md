@@ -420,6 +420,50 @@ cat data8
 Pass: wbWdlBxEir4CaE8LaPhauuOo6pwRmrDw
 
 ## Bandit Level 13 → Level 14
+Given that the password **can only be read by user bandit14**
+
+Got a private SSH key that can be used to log into the next level
+
+localhost is the hostname
+
+```
+ssh bandit14@localhost -i sshkey.private -p 2220
+```
+Entered to bandit14
+
+Wanted to find the password to enter bandit14
+
+Password is stored in /etc/bandit_pass/bandit14 
+
+We can read output using **cat** command
+```
+cat /etc/bandit_pass/bandit14
+```
+Output:
+
+fGrHPx402xGC7U7rXKDaxiWFTOiF0ENq
+
+Got the password
+
+Pass: fGrHPx402xGC7U7rXKDaxiWFTOiF0ENq
+
+## Bandit Level 14 → Level 15
+
+Used **nc** command to connect with port 30000 on localhost.
+
+The Netcat ( nc ) command is a command-line utility for reading and writing data between two computer networks.
+
+And gave the password of level 14
+
+
+
+
+
+
+
+
+
+
 
 
 
