@@ -262,6 +262,166 @@ Next step is to decompress
 gzip -d data.gz
 ```
 Check using **file** command we got it or do we need to decompress more
+```
+file data
+```
+Output:
+
+data: bzip2 compressed data, block size = 900k
+
+Identified this is a bzip2 compressed data
+
+we need to rename to **.bz2** format and decompress it
+```
+mv data data.bz2
+bzip2 -d data.bz2
+```
+Check using **file** command we got it or do we need to decompress more
+```
+file data
+```
+Output:
+
+data: gzip compressed data, was "data4.bin", last modified: Sat Dec  3 08:13:49 2022, max compression, from Unix, original size modulo 2^32 20480
+
+Identified it is a gzip compressed data
+
+we need to rename to **.gz** format and decompress it
+```
+mv data data.gz
+gzip -d data.gz
+```
+Check using **file** command we got it or do we need to decompress more
+```
+file data
+```
+Output:
+
+data: POSIX tar archive (GNU)
+
+Identified it as a POSIX tar archive
+
+tar - an archiving utility
+
+we need to extract the file
+
+```
+tar -x -f data
+file data5.bin
+tar -x -f data5.bin
+```
+we got a file named data6.bin
+
+Check using **file** command we got it or do we need to decompress more
+
+```
+file data6.bin
+```
+Output:
+
+data6.bin: bzip2 compressed data, block size = 900k
+
+Identified this is a bzip2 compressed data
+
+We need to extract it
+
+```
+bzip2 -d data6.bin
+```
+bzip2: Can't guess original name for data6.bin -- using data6.bin.out
+
+Check using **file** command we got it or do we need to decompress more
+```
+file data6.bin.out
+```
+Output:
+
+data6.bin.out: POSIX tar archive (GNU)
+
+Identified it as a POSIX tar archive
+
+we need to extract the file
+```
+tar -x -f data6.bin.out
+```
+Got a file named **data8.bin**
+
+Check using **file** command we got it or do we need to decompress more
+```
+file data8.bin
+```
+
+Output:
+
+data8.bin: gzip compressed data, was "data9.bin", last modified: Sat Dec  3 08:13:49 2022, max compression, from Unix, original size modulo 2^32 49
+
+Identified it is a gzip compressed data
+
+we need to rename to **.gz** format and decompress it
+
+```
+mv data8.bin data8.gz
+gzip -d data8.gz
+```
+Got a file named **data8**
+
+Check using **file** command we got it or do we need to decompress more
+```
+file data8
+```
+Output:
+
+**data8: ASCII text**
+
+We found it as ASCII text
+
+Read **data8** using cat command
+```
+cat data8
+```
+Output:
+
+The password is wbWdlBxEir4CaE8LaPhauuOo6pwRmrDw
+
+Finally got the password
+
+All commands :- 
+
+```
+ls
+cat data.txt
+mkdir /tmp/newfile666
+cp data.txt /tmp/newfile666
+cd /tmp/newfile666
+xxd -r data.txt data
+file data
+mv data data.gz
+gzip -d data.gz
+file data
+mv data data.bz2
+bzip2 -d data.bz2
+file data
+mv data data.gz
+gzip -d data.gz
+file data
+tar -x -f data
+file data5.bin
+tar -x -f data5.bin
+file data6.bin
+bzip2 -d data6.bin
+file data6.bin.out
+tar -x -f data6.bin.out
+file data8.bin
+mv data8.bin data8.gz
+gzip -d data8.gz
+file data8
+cat data8
+```
+Pass: wbWdlBxEir4CaE8LaPhauuOo6pwRmrDw
+
+
+
+
 
 
 
