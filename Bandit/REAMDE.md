@@ -103,7 +103,7 @@ cat maybehere07/.file2
 
 Pass: P4L4vucdmLnm8I7Vl7jG1ApGSfjYKqJU
 
-## Bandit Level 5 → Level 6
+## Bandit Level 6 → Level 7
 
 ```
 find / -user bandit7 -group bandit6 -size 33c
